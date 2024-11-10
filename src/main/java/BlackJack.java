@@ -15,11 +15,18 @@ public class BlackJack {
         }
     }
 
+    ArrayList<Card> deck;
+
     BlackJack() {
         startGame();
     }
 
     public void startGame() {
-        // Code.
+        // Deck.
+        buildDeck();
+    }
+
+    public void buildDeck() {
+        // TODO: Add code.
     }
 }
