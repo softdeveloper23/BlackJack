@@ -5,5 +5,11 @@ import java.util.Random;
 import javax.swing.*;
 
 public class BlackJack {
+    BlackJack() {
+        startGame();
+    }
 
+    public void startGame() {
+        // Code.
+    }
 }
