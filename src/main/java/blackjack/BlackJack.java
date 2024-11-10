@@ -15,6 +15,10 @@ public class BlackJack {
             this.value = value;
             this.type = type;
         }
+
+        public String toString() {
+            return value +  "-" + type;
+        }
     }
 
     ArrayList<Card> deck;
