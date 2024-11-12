@@ -22,6 +22,7 @@ public class BlackJack {
     }
 
     ArrayList<Card> deck;
+    Random random = new Random(); // Shuffle the deck.
 
     BlackJack() {
         startGame();
@@ -30,6 +31,7 @@ public class BlackJack {
     public void startGame() {
         // Deck.
         buildDeck();
+        shuffleDeck();
     }
 
     public void buildDeck() {
@@ -45,6 +47,19 @@ public class BlackJack {
         }
 
         System.out.println("BUILD DECK:");
+        System.out.println(deck);
+    }
+
+    public void shuffleDeck() {
+        for (int i = 0; i < deck.size(); i++) {
+            int j = random.nextInt(deck.size());
+            Card currentCard = deck.get(i);
+            Card randomCard = deck.get(j);
+            deck.set(i, randomCard);
+            deck.set(j, currentCard);
+        }
+
+        System.out.println("SHUFFLE DECK:");
         System.out.println(deck);
     }
 }
