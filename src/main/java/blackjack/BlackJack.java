@@ -22,7 +22,7 @@ public class BlackJack {
 
         public int getValue() {
             if ("AJQK".contains(value)) { // Values ACE, JACK, QUEEN, KING.
-                if (value == "A") {
+                if (value == "A") { // TODO: This might be value.contains("A");
                     return 11;
                 }
                 return 10;
@@ -56,6 +56,7 @@ public class BlackJack {
 
         hiddenCard = deck.remove(deck.size() - 1); // Remove card at the last index.
         dealerSum += hiddenCard.getValue();
+        dealerAceCount += hiddenCard.isAce() ? 1 : 0;
     }
 
     public void buildDeck() {
