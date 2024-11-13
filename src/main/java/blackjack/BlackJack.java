@@ -19,6 +19,16 @@ public class BlackJack {
         public String toString() {
             return value +  "-" + type;
         }
+
+        public int getValue() {
+            if ("AJQK".contains(value)) { // Values ACE, JACK, QUEEN, KING.
+                if (value == "A") {
+                    return 11;
+                }
+                return 10;
+            }
+            return Integer.parseInt(value); // Values 2 - 10.
+        }
     }
 
     ArrayList<Card> deck;
