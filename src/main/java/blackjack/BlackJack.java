@@ -40,6 +40,10 @@ public class BlackJack {
         shuffleDeck();
 
         // Dealer.
+        dealerHand = new ArrayList<Card>();
+        dealerSum = 0;
+        dealerAceCount = 0;
+
 
     }
 
