@@ -24,6 +24,12 @@ public class BlackJack {
     ArrayList<Card> deck;
     Random random = new Random(); // Shuffle the deck.
 
+    // Dealer.
+    Card hiddenCard;
+    ArrayList<Card> dealerHand;
+    int dealerSum;
+    int dealerAceCount;
+
     BlackJack() {
         startGame();
     }
@@ -32,6 +38,9 @@ public class BlackJack {
         // Deck.
         buildDeck();
         shuffleDeck();
+
+        // Dealer.
+
     }
 
     public void buildDeck() {
