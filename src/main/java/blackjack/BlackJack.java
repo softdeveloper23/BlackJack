@@ -29,6 +29,10 @@ public class BlackJack {
             }
             return Integer.parseInt(value); // Values 2 - 10.
         }
+
+        public boolean isAce() {
+            return value == "A"; // TODO: This might be value.contains("A");
+        }
     }
 
     ArrayList<Card> deck;
