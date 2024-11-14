@@ -44,6 +44,11 @@ public class BlackJack {
     int dealerSum;
     int dealerAceCount;
 
+    // Player.
+    ArrayList<Card> playerHand;
+    int playerSum;
+    int playerAceCount;
+
     BlackJack() {
         startGame();
     }
