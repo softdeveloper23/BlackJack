@@ -89,6 +89,11 @@ public class BlackJack {
             playerAceCount += card.isAce() ? 1 : 0;
             playerHand.add(card);
         }
+
+        System.out.println("PLAYER:");
+        System.out.println(playerHand);
+        System.out.println(playerSum);
+        System.out.println(playerAceCount);
     }
 
     public void buildDeck() {
