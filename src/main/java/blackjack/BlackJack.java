@@ -54,6 +54,7 @@ public class BlackJack {
     int boardHeight = 600;
 
     JFrame frame = new JFrame("Black Jack");
+    JPanel gamePanel = new JPanel();
 
     BlackJack() {
         startGame();
@@ -63,6 +64,10 @@ public class BlackJack {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        gamePanel.setLayout(new BorderLayout());
+        gamePanel.setBackground(new Color(53, 101, 77));
+        frame.add(gamePanel);
     }
 
     public void startGame() {
