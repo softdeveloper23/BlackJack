@@ -76,7 +76,7 @@ public class BlackJack {
         buttonPanel.add(hitButton);
         stayButton.setFocusable(false);
         buttonPanel.add(stayButton);
-        frame.add(buttonPanel);
+        frame.add(buttonPanel, BorderLayout.SOUTH);
     }
 
     public void startGame() {
