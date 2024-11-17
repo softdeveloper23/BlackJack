@@ -49,6 +49,12 @@ public class BlackJack {
     int playerSum;
     int playerAceCount;
 
+    // Window.
+    int boardWidth = 600;
+    int boardHeight = 600;
+
+    JFrame frame = new JFrame("Black Jack");
+
     BlackJack() {
         startGame();
     }
